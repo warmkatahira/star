@@ -18,7 +18,7 @@
             @foreach($histories as $history)
                 <tr class="text-left hover:bg-theme-sub cursor-default">
                     <td class="py-1 px-2 border">{{ CarbonImmutable::parse($history->date)->isoFormat('Y年MM月DD日') }}</td>
-                    <td class="py-1 px-2 border">{{ CarbonImmutable::parse($history->time)->isoFormat('hh時mm分ss秒') }}</td>
+                    <td class="py-1 px-2 border">{{ CarbonImmutable::parse($history->time)->isoFormat('HH時mm分ss秒') }}</td>
                     <td class="py-1 px-2 border">{{ $history->category }}</td>
                     <td class="py-1 px-2 border">{{ $history->item_code }}</td>
                     <td class="py-1 px-2 border">{{ $history->item->jan_code }}</td>

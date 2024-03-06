@@ -13,6 +13,7 @@ export default defineConfig({
 			'resources/js/app.js',
 			'resources/sass/theme.scss',
             'resources/sass/navigation.scss',
+            'resources/js/quantity_change.js',
 		]),
 	],
 });

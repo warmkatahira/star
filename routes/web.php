@@ -8,6 +8,8 @@ use App\Http\Controllers\Welcome\WelcomeController;
 use App\Http\Controllers\Top\TopController;
 // +-+-+-+-+-+-+-+- 履歴 +-+-+-+-+-+-+-+-
 use App\Http\Controllers\History\HistoryController;
+// +-+-+-+-+-+-+-+- 数量交換 +-+-+-+-+-+-+-+-
+use App\Http\Controllers\QuantityChange\QuantityChangeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +39,11 @@ Route::middleware(['auth'])->group(function () {
         // -+-+-+-+-+-+-+-+-+-+-+-+ 履歴 -+-+-+-+-+-+-+-+-+-+-+-+
         Route::controller(HistoryController::class)->prefix('history')->name('history.')->group(function(){
             Route::get('', 'index')->name('index');
+        });
+        // -+-+-+-+-+-+-+-+-+-+-+-+ 数量交換 -+-+-+-+-+-+-+-+-+-+-+-+
+        Route::controller(QuantityChangeController::class)->prefix('quantity_change')->name('quantity_change.')->group(function(){
+            Route::get('', 'index')->name('index');
+            Route::post('change', 'change')->name('change');
         });
 });
 

@@ -22,6 +22,10 @@ module.exports = {
                     'gray': "#ebe6e6",
                 },
             },
+            spacing: {
+                '500px': "500px",
+                '600px': "600px",
+            },
         },
     },
 

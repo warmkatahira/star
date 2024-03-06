@@ -17,7 +17,7 @@
                 @php
                     // 初回パッケージ数量 - 発注数の合計
                     $first_package_remaining = $item->first_package_quantity - $item->total_order_quantity;
-                    // マイナスであれば、0に変換
+                    // マイナスであれば、0に交換
                     if($first_package_remaining < 0){
                         $first_package_remaining = 0;
                     }
