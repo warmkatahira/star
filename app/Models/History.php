@@ -24,4 +24,9 @@ class History extends Model
     {
         return self::orderBy('date', 'asc')->orderBy('time', 'asc');
     }
+    // itemsテーブルとのリレーション
+    public function item()
+    {
+        return $this->belongsTo(Item::class, 'item_code', 'item_code');
+    }
 }

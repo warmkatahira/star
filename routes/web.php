@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Welcome\WelcomeController;
 // +-+-+-+-+-+-+-+- TOP +-+-+-+-+-+-+-+-
 use App\Http\Controllers\Top\TopController;
-// +-+-+-+-+-+-+-+- 管理 +-+-+-+-+-+-+-+-
-
+// +-+-+-+-+-+-+-+- 履歴 +-+-+-+-+-+-+-+-
+use App\Http\Controllers\History\HistoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +32,10 @@ Route::middleware(['auth'])->group(function () {
     // ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆ Top ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
         // -+-+-+-+-+-+-+-+-+-+-+-+ TOP -+-+-+-+-+-+-+-+-+-+-+-+
         Route::controller(TopController::class)->prefix('top')->name('top.')->group(function(){
+            Route::get('', 'index')->name('index');
+        });
+        // -+-+-+-+-+-+-+-+-+-+-+-+ 履歴 -+-+-+-+-+-+-+-+-+-+-+-+
+        Route::controller(HistoryController::class)->prefix('history')->name('history.')->group(function(){
             Route::get('', 'index')->name('index');
         });
 });
