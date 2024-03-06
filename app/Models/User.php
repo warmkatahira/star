@@ -12,14 +12,17 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    // 主キーカラムを変更
+    protected $primaryKey = 'user_id';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+    // 操作可能なカラムを定義
     protected $fillable = [
-        'name',
-        'email',
+        'user_name',
         'password',
     ];
 

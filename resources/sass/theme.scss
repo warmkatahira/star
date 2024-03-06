@@ -1,0 +1,19 @@
+$main_color: #FEA4A4;
+$sub_color: #FFDEDE;
+$third_color: #ebe6e6;
+
+// 画面全体に適用するスタイル
+body{
+    background-color: $third_color;
+    font-family: 'Kosugi Maru';
+}
+
+// 数字のフォント
+.Alkatra {
+    font-family: 'Alkatra'
+}
+
+// レモネードのフォント
+.Lemonada {
+    font-family: 'Lemonada'
+}

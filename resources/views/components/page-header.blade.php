@@ -1,0 +1,1 @@
+<p class="border-l-8 border-theme-main text-xl pl-3 my-3">{{ $content }}</p>
