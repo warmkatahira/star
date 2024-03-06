@@ -27,7 +27,7 @@
             </select>
             <label for="target_quantity" class="mb-1 mt-5"><i class="las la-star mr-1"></i>数量</label>
             <input type="tel" id="target_quantity" name="target_quantity" class="text-xs w-20 text-right bg-gray-200" value="2" readonly>
-            <p class="text-xs mt-1">※交換元の数量を更新すると自動で更新されます</span>
+            <p class="text-xs mt-1 text-red-500">※交換元の数量を更新すると自動で更新されます</span>
         </div>
         <button type="button" id="quantity_change_enter" class="mt-5 text-sm px-10 py-3 text-center bg-theme-main hover:bg-theme-sub w-600px">実行</button>
     </form>

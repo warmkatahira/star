@@ -3,6 +3,10 @@ $('#quantity_change_enter').on("click",function(){
     const source_quantity = parseInt($('#source_quantity').val());
     const target_quantity = parseInt($('#target_quantity').val());
     try {
+        // 同じ商品が選択されていないか
+        if($('#source_item_code').val() == $('#target_item_code').val()){
+            throw new Error('交換元と交換先が同じ商品になっています。');
+        }
         // 交換元の数量が正しいか
         if(source_quantity < 1 || isNaN(source_quantity)){
             throw new Error('交換元の数量が正しくありません。');

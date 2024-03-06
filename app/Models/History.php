@@ -22,7 +22,7 @@ class History extends Model
     // 全てを取得
     public static function getAll()
     {
-        return self::orderBy('date', 'asc')->orderBy('time', 'asc');
+        return self::orderBy('date', 'desc')->orderBy('time', 'desc');
     }
     // itemsテーブルとのリレーション
     public function item()
