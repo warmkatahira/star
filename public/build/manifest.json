@@ -14,11 +14,6 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "resources/js/order.js": {
-    "file": "assets/order-78456de6.js",
-    "src": "resources/js/order.js",
-    "isEntry": true
-  },
   "resources/js/quantity_change.js": {
     "file": "assets/quantity_change-d26188bd.js",
     "src": "resources/js/quantity_change.js",
@@ -27,6 +22,11 @@
   "resources/js/file_select.js": {
     "file": "assets/file_select-5a7ecfc1.js",
     "src": "resources/js/file_select.js",
+    "isEntry": true
+  },
+  "resources/js/order.js": {
+    "file": "assets/order-78456de6.js",
+    "src": "resources/js/order.js",
     "isEntry": true
   },
   "resources/js/app.js": {

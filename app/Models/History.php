@@ -29,4 +29,19 @@ class History extends Model
     {
         return $this->belongsTo(Item::class, 'item_code', 'item_code');
     }
+    // ヘッダーを定義
+    public static function csvHeader()
+    {
+        return [
+            '日付',
+            '時間',
+            'カテゴリ',
+            '商品コード',
+            'JANコード',
+            '商品名1',
+            '商品名2',
+            '数量',
+            'コメント',
+        ];
+    }
 }

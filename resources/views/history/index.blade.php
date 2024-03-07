@@ -1,6 +1,7 @@
 <x-app-layout>
     <x-page-header content="履歴"/>
-    <table class="text-xs block whitespace-nowrap">
+    <a href="{{ route('history.download') }}" class="text-sm px-10 py-3 text-center bg-theme-sub hover:bg-theme-main"><i class="las la-download mr-1"></i>ダウンロード<a>
+    <table class="text-xs block whitespace-nowrap mt-5">
         <thead>
             <tr class="text-left text-white bg-gray-600 sticky top-0">
                 <th class="font-thin py-1 px-2">日付</th>
