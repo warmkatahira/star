@@ -50,7 +50,7 @@ class QuantityChangeController extends Controller
             'quantity' => $request->target_quantity,
             'comment' => '「' . $request->source_item_code . '」を「' . $request->source_quantity . '」個減',
         ]);
-        return redirect()->route('top.index')->with([
+        return redirect()->route('history.index')->with([
             'alert_type' => 'success',
             'alert_message' => '数量交換を実施しました。',
         ]);
