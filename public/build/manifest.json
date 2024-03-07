@@ -1,11 +1,36 @@
 {
+  "resources/sass/theme.scss": {
+    "file": "assets/theme-04fe3874.css",
+    "src": "resources/sass/theme.scss",
+    "isEntry": true
+  },
+  "resources/sass/navigation.scss": {
+    "file": "assets/navigation-e58cff43.css",
+    "src": "resources/sass/navigation.scss",
+    "isEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app-Dykhhggy.css",
+    "file": "assets/app-975b6c86.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/js/order.js": {
+    "file": "assets/order-78456de6.js",
+    "src": "resources/js/order.js",
+    "isEntry": true
+  },
+  "resources/js/quantity_change.js": {
+    "file": "assets/quantity_change-d26188bd.js",
+    "src": "resources/js/quantity_change.js",
+    "isEntry": true
+  },
+  "resources/js/file_select.js": {
+    "file": "assets/file_select-5a7ecfc1.js",
+    "src": "resources/js/file_select.js",
+    "isEntry": true
+  },
   "resources/js/app.js": {
-    "file": "assets/app-CjgZ9Ty2.js",
+    "file": "assets/app-3802032f.js",
     "src": "resources/js/app.js",
     "isEntry": true
   }

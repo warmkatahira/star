@@ -10,6 +10,8 @@ use App\Http\Controllers\Top\TopController;
 use App\Http\Controllers\History\HistoryController;
 // +-+-+-+-+-+-+-+- 数量交換 +-+-+-+-+-+-+-+-
 use App\Http\Controllers\QuantityChange\QuantityChangeController;
+// +-+-+-+-+-+-+-+- 発注 +-+-+-+-+-+-+-+-
+use App\Http\Controllers\Order\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,11 +41,18 @@ Route::middleware(['auth'])->group(function () {
         // -+-+-+-+-+-+-+-+-+-+-+-+ 履歴 -+-+-+-+-+-+-+-+-+-+-+-+
         Route::controller(HistoryController::class)->prefix('history')->name('history.')->group(function(){
             Route::get('', 'index')->name('index');
+            Route::get('download', 'download')->name('download');
         });
         // -+-+-+-+-+-+-+-+-+-+-+-+ 数量交換 -+-+-+-+-+-+-+-+-+-+-+-+
         Route::controller(QuantityChangeController::class)->prefix('quantity_change')->name('quantity_change.')->group(function(){
             Route::get('', 'index')->name('index');
             Route::post('change', 'change')->name('change');
+        });
+        // -+-+-+-+-+-+-+-+-+-+-+-+ 発注 -+-+-+-+-+-+-+-+-+-+-+-+
+        Route::controller(OrderController::class)->prefix('order')->name('order.')->group(function(){
+            Route::get('', 'index')->name('index');
+            Route::post('upload', 'upload')->name('upload');
+            Route::post('confirm', 'confirm')->name('confirm');
         });
 });
 

@@ -14,6 +14,8 @@ export default defineConfig({
 			'resources/sass/theme.scss',
             'resources/sass/navigation.scss',
             'resources/js/quantity_change.js',
+            'resources/js/file_select.js',
+            'resources/js/order.js',
 		]),
 	],
 });

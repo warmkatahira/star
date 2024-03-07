@@ -29,6 +29,6 @@
             <input type="tel" id="target_quantity" name="target_quantity" class="text-xs w-20 text-right bg-gray-200" value="2" readonly>
             <p class="text-xs mt-1 text-red-500">※交換元の数量を更新すると自動で更新されます</span>
         </div>
-        <button type="button" id="quantity_change_enter" class="mt-5 text-sm px-10 py-3 text-center bg-theme-main hover:bg-theme-sub w-600px">実行</button>
+        <button type="button" id="quantity_change_enter" class="mt-5 text-sm px-10 py-3 text-center bg-theme-sub hover:bg-theme-main w-600px">実行</button>
     </form>
 </x-app-layout>

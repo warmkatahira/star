@@ -11,14 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('histories', function (Blueprint $table) {
-            $table->increments('history_id');
-            $table->date('date');
-            $table->time('time');
-            $table->string('category', 10);
+        Schema::create('order_imports', function (Blueprint $table) {
+            $table->increments('order_id');
             $table->string('item_code', 20);
-            $table->integer('quantity');
-            $table->string('comment', 255)->nullable();
+            $table->unsignedInteger('quantity');
+            $table->string('order_file_name', 200);
             $table->timestamps();
         });
     }
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('histories');
+        Schema::dropIfExists('order_imports');
     }
 };
