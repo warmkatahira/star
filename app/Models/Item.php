@@ -25,4 +25,17 @@ class Item extends Model
     {
         return self::orderBy('item_code', 'asc');
     }
+    // ヘッダーを定義
+    public static function csvHeader()
+    {
+        return [
+            '商品コード',
+            'JANコード',
+            '商品名1',
+            '商品名2',
+            '初回パッケージ数量',
+            '発注済み数量',
+            '初回パッケージ残数',
+        ];
+    }
 }

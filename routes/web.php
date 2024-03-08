@@ -37,6 +37,8 @@ Route::middleware(['auth'])->group(function () {
         // -+-+-+-+-+-+-+-+-+-+-+-+ TOP -+-+-+-+-+-+-+-+-+-+-+-+
         Route::controller(TopController::class)->prefix('top')->name('top.')->group(function(){
             Route::get('', 'index')->name('index');
+            Route::get('download', 'download')->name('download');
+            Route::post('upload', 'upload')->name('upload');
         });
         // -+-+-+-+-+-+-+-+-+-+-+-+ 履歴 -+-+-+-+-+-+-+-+-+-+-+-+
         Route::controller(HistoryController::class)->prefix('history')->name('history.')->group(function(){
